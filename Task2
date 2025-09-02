@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Web Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Basics of Web Development</h1>
+        
+        <div class="section">
+            <h2 class="section-title">Objective:</h2>
+            <ul>
+                <li>Learn and apply foundational HTML, CSS, and JavaScript concepts.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Steps:</h2>
+            <ol>
+                <li>
+                    <h3>Create a Simple Webpage Using HTML:</h3>
+                    <p class="objective-desc">Objective: Understand basic HTML elements and structure.</p>
+                    <p class="actions-desc">Actions: Build a webpage with headings, paragraphs, images, and links.</p>
+                </li>
+                <li>
+                    <h3>Style the Webpage Using CSS:</h3>
+                    <p class="objective-desc">Objective: Learn how to apply styling with CSS.</p>
+                    <p class="actions-desc">Actions: Add colors, fonts, spacing, and layout adjustments to the webpage.</p>
+                </li>
+                <li>
+                    <h3>Add Basic JavaScript for Interactivity:</h3>
+                    <p class="objective-desc">Objective: Implement simple interactions using JavaScript.</p>
+                    <p class="actions-desc">Actions: Create a button that triggers an alert message when clicked.</p>
+                    <button id="alertBtn">Click Me!</button>
+                </li>
+            </ol>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    color: #3498db;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.objective-desc {
+    font-style: italic;
+    color: #6c7a89;
+}
+
+.actions-desc {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#alertBtn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#alertBtn:hover {
+    background-color: #c0392b;
+}
+document.getElementById('alertBtn').addEventListener('click', function() {
+    alert('Hello! This is an alert message triggered by JavaScript.');
+});
